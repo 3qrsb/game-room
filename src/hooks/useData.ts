@@ -30,6 +30,7 @@ const useData = <T>(endpoint:string) => {
         });
 
     return () => controller.abort();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return { data, error, isLoading};
